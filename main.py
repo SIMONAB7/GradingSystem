@@ -49,7 +49,7 @@ def uni_progress(pdf):  # syntax for pass, defer, and fail(p, d, f)
         print("Total incorrect! Try again!\n")
         return uni_progress(main())  # returns list[p,d,f] from main and validates values again
 
-
+#hello
 ##def id_validation(): #asks for student id and validates it
 ##    var.student_id = input("Enter your student ID, beginning with 'w' followed by 7 unique digits: ")
 ##    if len(var.student_id) == 0:
