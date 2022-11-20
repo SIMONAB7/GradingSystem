@@ -49,22 +49,23 @@ def uni_progress(pdf):  # syntax for pass, defer, and fail(p, d, f)
         print("Total incorrect! Try again!\n")
         return uni_progress(main())  # returns list[p,d,f] from main and validates values again
 
-#hello1
-##def id_validation(): #asks for student id and validates it
-##    var.student_id = input("Enter your student ID, beginning with 'w' followed by 7 unique digits: ")
-##    if len(var.student_id) == 0:
-##        print("Enter a student ID")
-##        return id_validation()
-##    else:
-##            if var.student_id[0] == 'w' and len(var.student_id) == 8:
-##                if var.student_id not in var.student_id_holder:
-##                    return var.student_id
-##                else:
-##                    print(f'- {var.student_id} - is taken! Enter again!')
-##                    return id_validation()
-##            else:
-##                print(f'- {var.student_id} - is not valid! Enter again!')
-##                return id_validation()
+
+def id_validation():  # asks for student id and validates it
+    var.student_id = input("Enter your student ID, beginning with 'w' followed by 7 unique digits: ")
+    if len(var.student_id) == 0:
+        print("Enter a student ID")
+        return id_validation()
+    else:
+        if var.student_id[0] == 'w' and len(var.student_id) == 8:
+            if var.student_id not in var.student_id_holder:
+                return var.student_id
+            else:
+                print(f'- {var.student_id} - is taken! Enter again!')
+                return id_validation()
+        else:
+            print(f'- {var.student_id} - is not valid! Enter again!')
+            return id_validation()
+
 
 def main():  # acts as function manager
     var.student_id = input("Enter your student ID, beginning with 'w' followed by 7 unique digits: ")
